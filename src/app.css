@@ -1,0 +1,90 @@
+.App {
+    display:flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgba(24, 20, 29, 0.8);
+    min-height: 100vh;
+    color: white;
+}
+.App-header{
+    font-size: 24px;
+    font-weight: 300;
+}
+.new-note{
+    position: fixed;
+    align-self: flex-start;
+    top: 5%;
+    padding:5px;
+    border:none;
+    border-radius: 12px;
+    font-size: 30px;
+    background-color: orange;
+}
+.container {
+    margin: 10px;
+}
+.header{
+    text-align: right;
+}
+.edit {
+    resize:none;
+    outline:none;
+    overflow:auto;
+    font-size: 14px;
+}
+
+.edit, .view {
+    background-color:rgb(45, 45, 61);
+    color:white;
+    min-height:200px;
+    width:800px;
+    border: 1px solid white;
+    padding: 15px;
+}
+
+
+@media only screen and (max-width: 850px) {
+    .edit, .view {
+        width:400px;
+    }
+}
+.save-button, .edit-button, .delete-button {
+    padding:0;
+    border:none;
+    font-size: 20px;
+    width:40px;
+    background-color: orange;
+}
+.new-note:hover, .save-button:hover, .edit-button:hover, .delete-button:hover{
+    color:black;
+    background-color:white;
+    transition: 0.4s;
+}
+
+@media only screen and (max-width: 460px){
+    .edit, .view {
+        width:80vw;
+    }
+}
+
+/* scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+::-webkit-scrollbar-track {
+    background: #000000; 
+  }
+   
+  /* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(110, 62, 17); 
+  }
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(228, 117, 26); 
+  }
